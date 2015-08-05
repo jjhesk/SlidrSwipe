@@ -7,16 +7,12 @@ An Android library that help you to build app with swipe back gesture.
 ![](https://github.com/Issacw0ng/SwipeBackLayout/blob/master/art/screenshot.png?raw=true)
 
 
-Demo Apk
+Easy Usage
 ===
-[GooglePlay](https://play.google.com/store/apps/details?id=me.imid.swipebacklayout.demo)
 
 
-Requirement
-===
-The latest android-support-v4.jar should be referenced by your project.
 
-Usage
+Usage by extend activity
 ===
 1. Add SwipeBackLayout as a dependency to your existing project.
 2. To enable SwipeBackLayout, you can simply make your `Activity` extend `SwipeBackActivity`:
@@ -26,7 +22,7 @@ Usage
 
 Simple Example
 ===
-```
+```java
 public class DemoActivity extends SwipeBackActivity implements View.OnClickListener {
     private int[] mBgColors;
 
@@ -76,7 +72,7 @@ Download
 ===
 Download via Jcenter:
 ```
-compile 'me.imid.swipebacklayout.lib:library:1.0.0'
+
 ```
 
 
@@ -87,7 +83,7 @@ I will gladly accept pull requests for fixes and feature enhancements but please
 License
 ===
 
-   Copyright 2013 Issac Wong
+   Copyright (c) 2015 世外桃源
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.
