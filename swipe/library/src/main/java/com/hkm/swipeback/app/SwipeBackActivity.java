@@ -29,8 +29,10 @@ public class SwipeBackActivity extends FragmentActivity implements SwipeBackBase
     @Override
     public View findViewById(int id) {
         View v = super.findViewById(id);
-        if (v == null && mHelper != null)
-            return mHelper.findViewById(id);
+        if (v == null && mHelper != null) {
+            View of = mHelper.findViewById(id);
+            if (of != null) return of;
+        }
         return v;
     }
 
